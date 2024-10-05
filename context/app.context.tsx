@@ -5,8 +5,8 @@ import { TopLevelCategory } from '../interfaces/page.interface';
 export interface IAppContext {
     menu: MenuItem[];
     firstCategory: TopLevelCategory;
-    searchQuery: string;  // Состояние для поискового запроса
-    searchResults: MenuItem[]; // Состояние для хранения результатов поиска
+    searchQuery?: string;  // Состояние для поискового запроса
+    searchResults?: MenuItem[]; // Состояние для хранения результатов поиска
     setMenu?: (newMenu: MenuItem[]) => void;
     setSearchQuery?: (query: string) => void;  // Метод для обновления поискового запроса
 }
